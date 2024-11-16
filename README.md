@@ -55,13 +55,13 @@ Ensure you have the following installed on your system:
    ```
 
 2. Install the required Python packages:
-  ```bash
-  pip install flask
-  ```
+    ```bash
+    pip install flask
+    ```
 3. Run the Flask server:
-  ```bash
-  python app.py
-  ```
+    ```bash
+    python app.py
+    ```
 4. Open your browser and navigate to: http://127.0.0.1:5000/
 
 ## File Structure
