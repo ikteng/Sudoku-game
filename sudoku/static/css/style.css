@@ -1,0 +1,233 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa; /* Soft off-white background for a clean look */
+    color: #333;
+}
+
+h1 {
+    color: #2d2d2d;
+    font-size: 2.5rem; /* Reduced font size */
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+header {
+    padding: 8px 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px; /* Reduced padding */
+    font-size: 14px; /* Slightly smaller text */
+    cursor: pointer;
+    border-radius: 6px; /* Smaller radius */
+    border: none;
+    background-color: #007bff; /* Soft blue button */
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+    margin-top: 8px; /* Adjusted margin */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    background-color: #003f7f;
+    transform: scale(1);
+}
+
+button.clear {
+    background-color: #f44336; /* Red for clear button */
+}
+
+button.clear:hover {
+    background-color: #d32f2f;
+}
+
+button.clear:active {
+    background-color: #c2185b;
+}
+
+#board {
+    margin: 15px auto; /* Reduced margin */
+    border-collapse: collapse;
+    border: 2px solid #333; /* Thinner border */
+    border-radius: 6px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+#board td {
+    border: 1px solid #ddd;
+    padding: 15px; /* Reduced padding */
+    font-size: 1.2rem; /* Smaller font inside cells */
+    transition: background-color 0.3s ease;
+}
+
+#board td:hover {
+    background-color: #e1f5fe;
+}
+
+input {
+    width: 35px; /* Smaller width */
+    height: 35px; /* Smaller height */
+    text-align: center;
+    font-size: 18px; /* Smaller text */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    background-color: #e0f7fa;
+    box-shadow: 0 0 5px #007bff;
+}
+
+#rules-container {
+    display: none; /* Initially hidden */
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer and bigger shadow */
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+}
+
+#rules-container h2 {
+    color: #2d2d2d;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+#rules-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+#rules-container li {
+    font-size: 1.1rem;
+    margin: 12px 0;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.6;
+}
+
+#rules-container li:hover {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#toggle-rules-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    margin-top: 12px;
+    transition: background-color 0.3s ease;
+}
+
+#toggle-rules-button:hover {
+    background-color: #0056b3;
+}
+
+#toggle-rules-button:active {
+    background-color: #003f7f;
+}
+
+
+#keypad {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#keypad h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px; /* Slightly reduced gap */
+    margin-top: 8px;
+}
+
+#buttons button {
+    width: 50px; /* Smaller button size */
+    height: 50px;
+    font-size: 18px; /* Smaller font */
+    cursor: pointer;
+    background-color: #00e1ff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+}
+
+#buttons button:hover {
+    background-color: #b2ebf2;
+    transform: scale(1.05);
+}
+
+#buttons button:active {
+    background-color: #00aeff;
+}
+
+#buttons button.clear {
+    background-color: #ff5252; /* Soft red */
+}
+
+#buttons button.clear:hover {
+    background-color: #f44336;
+}
+
+#buttons button.clear:active {
+    background-color: #c2185b;
+}
+
+.controls {
+    margin-top: 20px; /* Reduced margin */
+}
+
+.controls button {
+    width: 180px; /* Reduced button width */
+    font-size: 16px; /* Smaller text */
+    padding: 10px; /* Reduced padding */
+    background-color: #007bff;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin: 8px; /* Adjusted margin */
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+.controls button:active {
+    background-color: #003f7f;
+}

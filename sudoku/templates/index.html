@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sudoku Game</h1>
+            <button id="toggle-rules-button" onclick="toggleRules()">Show Rules</button>
+        </header>
+
+        <section id="rules-container">
+            <div id="rules">
+                <h2>How to Play</h2>
+                <ul>
+                    <li>Fill each row, column, and 3x3 grid with numbers 1-9 without repetition.</li>
+                    <li>Pre-filled numbers are fixed and cannot be changed.</li>
+                    <li>Enter numbers between 1-9 in the empty cells.</li>
+                    <li>Click "Check Solution" to verify your progress.</li>
+                    <li>Use "Get Hint" if you're stuck.</li>
+                </ul>
+            </div>
+        </section>               
+
+        <section id="board-container">
+            <table id="board"></table>
+        </section>
+
+        <section id="keypad">
+            <h2>Numeric Keypad</h2>
+            <div id="buttons">
+                <button onclick="setInput(1)">1</button>
+                <button onclick="setInput(2)">2</button>
+                <button onclick="setInput(3)">3</button>
+                <button onclick="setInput(4)">4</button>
+                <button onclick="setInput(5)">5</button>
+                <button onclick="setInput(6)">6</button>
+                <button onclick="setInput(7)">7</button>
+                <button onclick="setInput(8)">8</button>
+                <button onclick="setInput(9)">9</button>
+                <button class="clear" onclick="clearInput()">←</button>
+            </div>
+        </section>
+
+        <div class="controls">
+            <button onclick="checkSolution()">Check Solution</button>
+            <button onclick="getHint()">Get Hint</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/sudoku.js') }}"></script>
+</body>
+</html>
