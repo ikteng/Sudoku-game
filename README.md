@@ -53,17 +53,16 @@ Ensure you have the following installed on your system:
    git clone https://github.com/ikteng/Sudoku-game.git
    cd sudoku
    ```
-   
-  Install the required Python packages:
+
+2. Install the required Python packages:
   ```bash
   pip install flask
   ```
-
-  Run the Flask server:
+3. Run the Flask server:
   ```bash
   python app.py
   ```
-Open your browser and navigate to: http://127.0.0.1:5000/
+4. Open your browser and navigate to: http://127.0.0.1:5000/
 
 ## File Structure
 - app.py: Main Flask application for serving endpoints and rendering templates.
